@@ -42,7 +42,7 @@ export const technicalEvents: Event[] = [
       'Problem statements will be provided',
       'Mentors and co-ordinators available for guidance',
       'team size:- min 4 - max 6'
-      
+
     ],
     type: 'technical',
     color: 'primary'
@@ -57,7 +57,7 @@ export const technicalEvents: Event[] = [
       'Expo starts after Hackathon ends (Day 2)',
       'Team-based presentation',
       'Projects judged on innovation, feasibility, and presentation',
-      '₹300 per team
+      '₹300 per team',
     ],
     type: 'technical',
     color: 'primary'

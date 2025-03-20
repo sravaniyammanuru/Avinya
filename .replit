@@ -15,7 +15,7 @@ localPort = 5000
 externalPort = 80
 
 [workflows]
-runButton = "Dev Server (Robust)"
+runButton = "Dev Server (Fixed Port)"
 
 [[workflows.workflow]]
 name = "Project"
@@ -295,3 +295,36 @@ args = "npm install"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "NODE_ENV=development npm run dev"
+
+[[workflows.workflow]]
+name = "Dev Server (Fixed Port)"
+author = 40630878
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "pkill -f \"node\" || true"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "sleep 3"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "fuser -k 5000/tcp || true"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "sleep 2"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "clear"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "NODE_ENV=development npm install"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "NODE_ENV=development PORT=5000 HOST=0.0.0.0 npm run dev"
