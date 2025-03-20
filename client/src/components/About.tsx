@@ -30,7 +30,7 @@ export default function About() {
             </p>
             
             <div className="grid grid-cols-2 gap-4 mt-8">
-              <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 hover-scale animate-slide-left magic-border">
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 hover-scale animate-slide-left">
                 <h4 className="font-poppins font-semibold text-[var(--primary)] mb-2">Vision</h4>
                 <p className="text-sm text-gray-600">To become a center of excellence in technical education fostering research, innovation and entrepreneurship.</p>
               </div>
