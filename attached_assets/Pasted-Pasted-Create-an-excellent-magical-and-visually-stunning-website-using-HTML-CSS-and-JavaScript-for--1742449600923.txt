@@ -1,0 +1,47 @@
+Pasted--Create-an-excellent-magical-and-visually-stunning-website-using-HTML-CSS-and-JavaScript-for-a-s-1742447319327.txt
+"Create an excellent, magical, and visually stunning website using HTML, CSS, and JavaScript for a symposium named Avinya conducted by Chaitanya Bharathi Institute of Technology (CBIT). The website should have vibrant colors, hover effects, smooth animations, and magical transitions. It should look highly engaging and professional.
+
+📌 Sections and Features:
+Home Page:
+
+Display a grand welcome message:
+Welcome to Avinya - A Celebration of Talent and Innovation!
+
+Include a brief introduction about CBIT using the following:
+Chaitanya Bharathi Institute Of Technology was established at Proddatur in YSR (Kadapa) District, Andhra Pradesh, with a commitment to providing quality education. Under the leadership of Sri. V. Jayachandra Reddy, CBIT is affiliated with Jawaharlal Nehru Technological University, Anantapuramu (JNTUA), and has gained recognition for fostering academic excellence.
+
+Event Categories:
+Create interactive cards with hover effects for both technical and non-technical events. Clicking on a card should reveal detailed event information with registration buttons.
+
+Technical Events:
+
+Technical Quiz: ₹100 per head
+PPT, Coding, SQL: ₹150 per head (₹300 for team of 2)
+Hackathon: ₹400 per head (24 hours)
+Project Expo: ₹300 per team
+Web Design: (Same as coding fee)
+Non-Technical Events:
+
+E-Sports (Free Fire, PUBG): ₹100 per head
+Culturals (Songs, Dances, Photography): ₹150 per head (₹100 per head for teams of 5+)
+1-Minute Games: ₹100 per head
+Treasure Hunt: ₹50 per head
+Meme Making: ₹49 per head (Participants promote memes using referral links. Highest referrals win prizes)
+Additional Features:
+
+Accommodation: ₹200 per head (Optional)
+Lunch Provided: For both days
+Event Schedule:
+
+Day 1: PPT, SQL, Coding, Technical Quiz, and Hackathon (Hackathon from 11 AM Day 1 to 11 AM Day 2)
+Day 2: Non-Technical Events and Project Expo (Expo starts after Hackathon ends)
+Registration Form:
+
+Clicking on the "Register Now" button should redirect users to a stylish registration form for the selected event.
+Design Style:
+
+Use magical and bright color schemes.
+Implement dynamic hover effects and interactive transitions.
+Apply animated backgrounds and particle effects for a magical vibe.
+Ensure responsiveness across devices.
+Deliver a complete project folder with HTML, CSS, JavaScript, and images. Ensure clean and commented code. Provide instructions on how to run the website locally."
