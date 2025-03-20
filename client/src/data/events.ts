@@ -9,8 +9,9 @@ export const technicalEvents: Event[] = [
     icon: 'fa-question',
     details: [
       'Quiz covering various technical topics',
-      'Individual participation',
-      'Cash prizes for winners',
+      'Team of 4 members',
+      'prizes for winners',
+      'registration fee:- ₹100/- per head',
     ],
     type: 'technical',
     color: 'primary'
@@ -19,12 +20,13 @@ export const technicalEvents: Event[] = [
     id: 'coding',
     title: 'Coding',
     description: 'Showcase your coding skills',
-    fee: '₹150 per head (₹300 for team of 2)',
+    fee: '₹200 per head (₹300/- per team if team contains 2 members)',
     icon: 'fa-code',
     details: [
       'Multiple programming languages supported',
       'Individual or team of 2',
       'Problem statement provided on-spot',
+      'registration fee:- ₹200 per head (₹300/- per team if team contains 2 members)'
     ],
     type: 'technical',
     color: 'primary'
@@ -32,13 +34,15 @@ export const technicalEvents: Event[] = [
   {
     id: 'hackathon',
     title: 'Hackathon',
-    description: '24-hour coding marathon',
+    description: '24-hour Hackathon',
     fee: '₹400 per head',
     icon: 'fa-laptop-code',
     details: [
-      'Starts 11 AM Day 1 to 11 AM Day 2',
+      'The event will commence at 11:00 AM on Day 1 and conclude at 11:00 AM on Day 2, spanning a full 24-hour experience.',
       'Problem statements will be provided',
-      'Mentors available for guidance',
+      'Mentors and co-ordinators available for guidance',
+      'team size:- min 4 - max 6'
+      
     ],
     type: 'technical',
     color: 'primary'
@@ -53,6 +57,7 @@ export const technicalEvents: Event[] = [
       'Expo starts after Hackathon ends (Day 2)',
       'Team-based presentation',
       'Projects judged on innovation, feasibility, and presentation',
+      '₹300 per team
     ],
     type: 'technical',
     color: 'primary'
