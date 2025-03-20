@@ -7,8 +7,21 @@ interface EventCardProps {
 export default function EventCard({ event }: EventCardProps) {
   const colorClass = event.type === 'technical' ? 'primary' : 'secondary';
   
+  const handleMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.currentTarget.style.transform = 'translateY(-10px)';
+    e.currentTarget.style.transition = 'transform 0.3s ease';
+  };
+  
+  const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.currentTarget.style.transform = 'translateY(0)';
+  };
+  
   return (
-    <div className="flip-card h-80">
+    <div 
+      className="flip-card h-80 animate-fade-scale"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <div className="flip-card-inner rounded-xl shadow-lg">
         <div className="flip-card-front bg-white rounded-xl p-6 flex flex-col justify-between">
           <div className={`w-16 h-16 bg-[var(--${colorClass})] bg-opacity-10 rounded-full flex items-center justify-center mx-auto`}>
