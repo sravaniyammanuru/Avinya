@@ -116,6 +116,7 @@ export const nonTechnicalEvents: Event[] = [
       'Individual registrations',
       'Bring your own device',
       'Tournament style competition',
+      'Registration fee:- ₹100 per head'
     ],
     type: 'non-technical',
     color: 'secondary'
@@ -130,6 +131,7 @@ export const nonTechnicalEvents: Event[] = [
       'Individual or team participation',
       'Songs, dances, and photography',
       'Special discount for teams of 5+',
+      'Registration fee:- 150/- per head (100/- per head for 5+ in a team)', 
     ],
     type: 'non-technical',
     color: 'secondary'
@@ -144,6 +146,7 @@ export const nonTechnicalEvents: Event[] = [
       'Various mini-games',
       'Individual participation',
       'Fast-paced and exciting',
+      'registration fee:- 100/- per head',
     ],
     type: 'non-technical',
     color: 'secondary'
@@ -158,6 +161,7 @@ export const nonTechnicalEvents: Event[] = [
       'Campus-wide hunt',
       'Challenging riddles and clues',
       'Prizes for the fastest teams',
+      'registration fee:- 50/- per head',
     ],
     type: 'non-technical',
     color: 'secondary'
@@ -169,9 +173,8 @@ export const nonTechnicalEvents: Event[] = [
     fee: '₹49 per head',
     icon: 'fa-face-laugh',
     details: [
-      'Create original memes on given topics',
-      'Share via referral links',
-      'Highest referrals win prizes',
+      'Create original memes on the event(Avasya)',
+      'refer more and win more',
     ],
     type: 'non-technical',
     color: 'secondary'
