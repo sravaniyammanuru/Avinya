@@ -35,7 +35,7 @@ export default function EventCard({ event }: EventCardProps) {
           </div>
           <a 
             href="#register" 
-            className={`mt-4 bg-white text-[var(--${colorClass})] font-medium px-4 py-2 rounded-full inline-block hover:bg-gray-100 transition duration-300`}
+            className={`mt-4 ${event.type === 'technical' ? 'bg-white text-[var(--primary)]' : 'bg-white text-[var(--secondary)]'} font-medium px-4 py-2 rounded-full inline-block hover:bg-gray-100 transition duration-300`}
           >
             Register Now
           </a>
