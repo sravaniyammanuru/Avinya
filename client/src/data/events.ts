@@ -3,14 +3,11 @@ import { Event } from '../lib/types';
 export const technicalEvents: Event[] = [
   {
     id: 'tech-quiz',
-    title: 'Technical Quiz',
+    title: 'TechVinya',
     description: 'Test your technical knowledge',
-    fee: '₹100 per head',
-    icon: 'fa-question',
     details: [
       'Quiz covering various technical topics',
       'Team of 4 members',
-      'prizes for winners',
       'registration fee:- ₹100/- per head',
     ],
     type: 'technical',
@@ -18,14 +15,13 @@ export const technicalEvents: Event[] = [
   },
   {
     id: 'coding',
-    title: 'Coding',
+    title: 'CodeSrusti',
     description: 'Showcase your coding skills',
     fee: '₹200 per head (₹300/- per team if team contains 2 members)',
     icon: 'fa-code',
     details: [
       'Multiple programming languages supported',
       'Individual or team of 2',
-      'Problem statement provided on-spot',
       'registration fee:- ₹200 per head (₹300/- per team if team contains 2 members)'
     ],
     type: 'technical',
@@ -33,7 +29,7 @@ export const technicalEvents: Event[] = [
   },
   {
     id: 'hackathon',
-    title: 'Hackathon',
+    title: 'HackFinity',
     description: '24-hour Hackathon',
     fee: '₹400 per head',
     icon: 'fa-laptop-code',
@@ -41,7 +37,7 @@ export const technicalEvents: Event[] = [
       'The event will commence at 11:00 AM on Day 1 and conclude at 11:00 AM on Day 2, spanning a full 24-hour experience.',
       'Problem statements will be provided',
       'Mentors and co-ordinators available for guidance',
-      'team size:- min 4 - max 6'
+      'Team size:- min 4 - max 6'
 
     ],
     type: 'technical',
@@ -64,14 +60,15 @@ export const technicalEvents: Event[] = [
   },
   {
     id: 'ppt',
-    title: 'PPT',
+    title: 'SlideDeck',
     description: 'Present your ideas',
-    fee: '₹150 per head (₹300 for team of 2)',
+    fee: '₹150 per head ',
     icon: 'fa-presentation',
     details: [
-      'Topics will be provided in advance',
+      'Showcase your knowledge on any cutting edge technologies',
       'Judged on content, design and presentation skills',
-      'Day 1 event',
+      'registration fee:- ₹200 per head (₹300/- per team if team contains 2 members)',
+      'Individual or team of 2',
     ],
     type: 'technical',
     color: 'primary'
@@ -80,12 +77,13 @@ export const technicalEvents: Event[] = [
     id: 'web-design',
     title: 'Web Design',
     description: 'Create beautiful websites',
-    fee: '₹150 per head (₹300 for team of 2)',
+    fee: '₹200 per head (₹300 for team of 2)',
     icon: 'fa-paint-brush',
     details: [
       'HTML, CSS, and JavaScript',
       'Individual or team of 2',
       'Themes provided on-spot',
+      'registration fee:- ₹200 per head (₹300/- per team if team contains 2 members)',
     ],
     type: 'technical',
     color: 'primary'
