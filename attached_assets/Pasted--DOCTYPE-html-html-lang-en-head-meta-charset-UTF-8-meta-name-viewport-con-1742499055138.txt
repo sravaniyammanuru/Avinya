@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinya 2K25</title>
+    <style>
+        body {
+            background-color: #02021b; /* Deep blue background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            position: relative; /* For absolute positioning context */
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Place behind content */
+        }
+
+        .logo-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1; /* Place above background */
+            width: 100%;
+        }
+
+        img {
+            max-width: 205px;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center horizontally */
+            opacity: 0;
+            transform: scale(0) rotate(-10deg);
+            animation: reveal-image 2s ease-out 0.5s forwards;
+            text-shadow: 2px 2px 2px rgba(143, 137, 137, 0.749);
+        }
+
+        h3 {
+            font-size: 60px;
+            letter-spacing: 3px;
+            color: rgb(230, 243, 242);
+            text-shadow: 
+                2px 2px 2px white,
+                2px 2px 2px pink,
+                2px 2px 2px pink, 
+                2px 2px 2px white;
+            margin: 10px 0;
+            opacity: 0;
+            width: 100%; /* Full width for proper centering */
+            animation: reveal-heading 2s ease-out 2.5s forwards;
+        }
+
+        p {
+            font-size: 24px;
+            color: #8eb8e5;
+            font-family: 'Quicksand', sans-serif;;
+            line-height: 1.5;
+            margin: 10px 0 20px;
+            opacity: 0;
+            width: 100%; /* Full width for proper centering */
+            animation: reveal-paragraph 2s ease-out 3.5s forwards;
+        }
+        
+        /* Keyframe animations */
+        @keyframes reveal-image {
+            0% {
+                opacity: 0;
+                transform: scale(0) rotate(-10deg);
+            }
+            60% {
+                opacity: 0.8;
+                transform: scale(1.2) rotate(5deg);
+            }
+            80% {
+                transform: scale(0.9) rotate(-2deg);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0);
+            }
+        }
+
+        @keyframes reveal-letter {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            60% {
+                transform: translateY(10px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes reveal-heading {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+                letter-spacing: 10px;
+            }
+            60% {
+                opacity: 0.8;
+                transform: translateY(5px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+                letter-spacing: 3px;
+            }
+        }
+
+        @keyframes reveal-paragraph {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+                letter-spacing: 2px;
+            }
+            30% {
+                letter-spacing: 3px;
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+                letter-spacing: normal;
+            }
+        }
+
+        /* Animation sequence controller */
+        .animate-sequence {
+            animation-play-state: running;
+        }
+
+        /* Individual animated circle styling */
+        .circle {
+            position: absolute;
+            border-radius: 50%; /* Make it circular */
+            background: gray;
+            animation: moveCircle 10s infinite linear; /* Continuous motion */
+            opacity: 0.5; /* Semi-transparent */
+        }
+
+        .circle:nth-child(1) {
+            width: 30px;
+            height: 30px;
+            top: 300px;
+            left: 20%;
+            animation-duration: 7s;
+            animation-timing-function: ease-in-out; /* Smooth entry and exit */
+        }
+        .circle:nth-child(2) {
+            width: 40px;
+            height: 40px;
+            top: 320px;
+            left: 10%;
+            animation-duration: 9s;
+            animation-timing-function: linear; /* Consistent motion */
+        }
+        .circle:nth-child(3) {
+            width: 35px;
+            height: 35px;
+            top: 70%;
+            left: 50%;
+            animation-duration: 8s;
+            animation-timing-function: ease-out; /* Smooth exit */
+        }
+        .circle:nth-child(4) {
+            width: 28px;
+            height: 28px;
+            top: 30%;
+            left: 70%;
+            animation-duration: 6s;
+            animation-timing-function: ease-in; /* Smooth entry */
+        }
+        .circle:nth-child(5) {
+            width: 25px;
+            height: 25px;
+            top: 80%;
+            left: 80%;
+            animation-duration: 10s;
+            animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1); /* Custom motion */
+        }
+        .circle:nth-child(6) {
+            width: 20px;
+            height: 20px;
+            top: 5%;
+            left: 15%;
+            animation-duration: 7s;
+            animation-timing-function: ease-in-out;
+        }
+        .circle:nth-child(7) {
+            width: 18px;
+            height: 18px;
+            top: 45%;
+            left: 85%;
+            animation-duration: 9s;
+            animation-timing-function: ease-in-out;
+        }
+        .circle:nth-child(8) {
+            width: 22px;
+            height: 22px;
+            top: 75%;
+            left: 40%;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+        }
+        .circle:nth-child(9) {
+            width: 30px;
+            height: 30px;
+            top: 450px;
+            left: 60%;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+        }
+        .circle:nth-child(10) {
+            width: 15px;
+            height: 15px;
+            top: 85%;
+            left: 70%;
+            animation-duration: 6s;
+            animation-timing-function: ease-out;
+        }
+
+        /* Animation keyframes */
+        @keyframes moveCircle {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+            25% {
+                transform: translate(50px, -50px) scale(1.2);
+            }
+            50% {
+                transform: translate(-50px, 50px) scale(0.8);
+            }
+            75% {
+                transform: translate(30px, -30px) scale(1.1);
+            }
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <!-- Multiple circles -->
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="logo-container">
+        <img src="https://res.cloudinary.com/dxxz4qcy9/image/upload/v1742484768/avinya_2k25_uhhptt.png" alt="Avinya 2K25 Logo">
+        <h3>Avinya</h3>
+        <p>Ignite your passion, Shape your future</p>
+    </div>
+
+    <script>
+        // Ensure animations play in sequence
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.querySelector('img').classList.add('animate-sequence');
+                
+                setTimeout(function() {
+                    document.querySelector('h3').classList.add('animate-sequence');
+                    
+                    setTimeout(function() {
+                        document.querySelector('p').classList.add('animate-sequence');
+                    }, 1000);
+                }, 2000);
+            }, 500);
+        });
+    </script>
+</body>
+</html>

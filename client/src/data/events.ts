@@ -124,12 +124,12 @@ export const nonTechnicalEvents: Event[] = [
   {
     id: 'culturals',
     title: 'Culturals',
-    description: 'Songs, Dances, Photography',
+    description: 'Songs, Dances',
     fee: '₹150 per head (₹100 for 5+)',
     icon: 'fa-music',
     details: [
       'Individual or team participation',
-      'Songs, dances, and photography',
+      'Songs, dances',
       'Special discount for teams of 5+',
       'Registration fee:- 150/- per head (100/- per head for 5+ in a team)', 
     ],
@@ -179,22 +179,37 @@ export const nonTechnicalEvents: Event[] = [
     type: 'non-technical',
     color: 'secondary'
   },
+  {
+    id: 'photography',
+    title: 'Photography',
+    description: 'Songs, Dances',
+    fee: '₹100/- per head',
+    icon: 'fa-music',
+    details: [
+      'Individual participation',
+      'Registration fee:- 100/- per head ', 
+    ],
+    type: 'non-technical',
+    color: 'secondary'
+  },
 ];
 
 export const dayOneSchedule = [
-  { time: '9:00 AM', title: 'Registration & Welcome', location: 'Main Auditorium' },
-  { time: '10:00 AM', title: 'Technical Quiz', location: 'Room 101' },
-  { time: '11:00 AM', title: 'Hackathon Begins', location: 'Lab Complex' },
-  { time: '12:00 PM', title: 'PPT Competition', location: 'Room 102' },
-  { time: '2:00 PM', title: 'SQL Challenge', location: 'Computer Lab' },
-  { time: '4:00 PM', title: 'Coding Competition', location: 'Room 103' },
+  { time: '8:30 to 9:30', title: 'Registration & Welcome', location: 'location' },
+  { time: '9:30 to 10:00', title: 'Inauguaration', location: 'location' },
+  {time: '10:30 to ?', title:'ppt', location:'location'},
+  {time: '10:30 to ?', title:'sql', location:'location'},
+  { time: '11:00 AM', title: 'Hackathon Begins', location: 'Location' },
+  { time: '11:30 AM to ?', title: 'Coding', location: 'location' },
+  { time: '1:00 PM to 2:00', title: 'Lunch', location: 'location' },
+  { time: '2:30 PM to ?', title: 'Quiz', location: 'location' },
 ];
 
 export const dayTwoSchedule = [
-  { time: '9:00 AM', title: 'Registration Day 2', location: 'Main Auditorium' },
-  { time: '10:00 AM', title: 'Culturals Begin', location: 'Open Auditorium' },
+  { time: '8:30 AM to 9:30', title: 'Registration Day 2', location: 'location' },
+  { time: '10:00 AM to 10:30', title: 'welcome(Instructions)', location: 'location' },
   { time: '11:00 AM', title: 'Hackathon Ends', location: 'Lab Complex' },
-  { time: '12:00 PM', title: 'Project Expo', location: 'Main Hall' },
-  { time: '2:00 PM', title: 'E-Sports & 1-Min Games', location: 'Recreation Area' },
-  { time: '5:00 PM', title: 'Prize Distribution', location: 'Main Auditorium' },
+  { time: '11:30 AM to ?', title: 'Project expo', location: 'location' },
+  { time: '? to ?', title: '1-min-games', location: 'Sports room' },
+  { time: '3:30 PM', title: 'Ending nore,prize distribution', location: 'seminar hall' },
 ];
