@@ -63,7 +63,7 @@ export const technicalEvents: Event[] = [
     title: 'SlideDeck',
     description: 'Present your ideas',
     fee: '₹150 per head ',
-    icon: 'fa-presentation',
+    icon: 'fa-person-chalkboard',
     details: [
       'Showcase your knowledge on any cutting edge technologies',
       'Judged on content, design and presentation skills',
@@ -78,7 +78,7 @@ export const technicalEvents: Event[] = [
     title: 'Web Design',
     description: 'Create beautiful websites',
     fee: '₹200 per head (₹300 for team of 2)',
-    icon: 'fa-paint-brush',
+    icon: 'fa-paintbrush',
     details: [
       'HTML, CSS, and JavaScript',
       'Individual or team of 2',
@@ -138,7 +138,7 @@ export const nonTechnicalEvents: Event[] = [
     title: 'Treasure Hunt',
     description: 'Find hidden clues',
     fee: '₹50 per head',
-    icon: 'fa-map-marked-alt',
+    icon: 'fa-map-location-dot',
     details: [
       'Campus-wide hunt',
       'Challenging riddles and clues',
@@ -152,7 +152,7 @@ export const nonTechnicalEvents: Event[] = [
     title: 'Meme Making',
     description: 'Create viral content',
     fee: '₹49 per head',
-    icon: 'fa-laugh',
+    icon: 'fa-face-laugh',
     details: [
       'Create original memes on given topics',
       'Share via referral links',
