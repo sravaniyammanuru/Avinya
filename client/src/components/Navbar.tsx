@@ -13,9 +13,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="font-poppins text-2xl font-bold text-[var(--primary)]">
-              <span className="text-[var(--accent)]">A</span>vinya
+            <Link href="/" className="font-poppins text-2xl font-bold text-[var(--primary)] flex items-center">
+              <img src="https://res.cloudinary.com/dxxz4qcy9/image/upload/v1742484768/avinya_2k25_uhhptt.png" alt="Avinya Logo" className="h-10 w-10 mr-2 " />
+              <span className="text-[var(--accent)]">Avinya</span>
             </Link>
+
           </div>
           
           <div className="hidden md:flex items-center space-x-8">

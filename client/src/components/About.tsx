@@ -4,7 +4,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-poppins font-bold text-[var(--primary)]">
-            About <span className="text-[var(--accent)]">CBIT</span>
+            About <span className="text-[var(--accent)]"></span>
           </h2>
           <div className="w-20 h-1 bg-[var(--primary)] mx-auto mt-2 mb-6 rounded-full"></div>
         </div>
@@ -22,9 +22,11 @@ export default function About() {
           
           <div className="w-full md:w-1/2">
             <p className="text-gray-700 leading-relaxed">
-              Chaitanya Bharathi Institute Of Technology was established at Proddatur in YSR (Kadapa) District, Andhra Pradesh, 
-              with a commitment to providing quality education. Under the leadership of Sri. V. Jayachandra Reddy, CBIT is affiliated 
-              with Jawaharlal Nehru Technological University, Anantapuramu (JNTUA), and has gained recognition for fostering academic excellence.
+              Avinya is an exciting symposium organized by Chaitanya Bharathi Institute of Technology (CBIT), Proddatur, bringing together innovation, talent, and creativity. The event serves as a dynamic platform for students to showcase their technical prowess, engage in intellectual challenges, and celebrate their talents.
+
+              CBIT's commitment to holistic development is evident through Avinya, which includes a diverse range of technical and non-technical events:
+
+
             </p>
             
             <div className="grid grid-cols-2 gap-4 mt-8">

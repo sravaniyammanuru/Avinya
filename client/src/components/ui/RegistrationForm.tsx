@@ -15,7 +15,7 @@ export default function RegistrationForm() {
     accommodation: 'no',
     message: ''
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -25,7 +25,7 @@ export default function RegistrationForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name || !formData.email || !formData.phone || !formData.college || !formData.event) {
       toast({
@@ -35,7 +35,7 @@ export default function RegistrationForm() {
       });
       return;
     }
-    
+
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
@@ -46,18 +46,18 @@ export default function RegistrationForm() {
       });
       return;
     }
-    
+
     try {
       setIsSubmitting(true);
       // Send data to the server
       await apiRequest('POST', '/api/register', formData);
-      
+
       // Success message
       toast({
         title: "Success!",
         description: "Registration successful! We'll contact you soon with further details.",
       });
-      
+
       // Reset the form
       setFormData({
         name: '',
@@ -94,7 +94,7 @@ export default function RegistrationForm() {
             Secure your spot at Avinya and join us for an unforgettable experience!
           </p>
         </div>
-        
+
         <div className="bg-white rounded-xl shadow-xl p-8 magical-border">
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -110,7 +110,7 @@ export default function RegistrationForm() {
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[var(--primary)] focus:border-[var(--primary)]"
                 />
               </div>
-              
+
               <div className="col-span-1">
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
                 <input 
@@ -123,7 +123,7 @@ export default function RegistrationForm() {
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[var(--primary)] focus:border-[var(--primary)]"
                 />
               </div>
-              
+
               <div className="col-span-1">
                 <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
                 <input 
@@ -136,7 +136,7 @@ export default function RegistrationForm() {
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[var(--primary)] focus:border-[var(--primary)]"
                 />
               </div>
-              
+
               <div className="col-span-1">
                 <label htmlFor="college" className="block text-sm font-medium text-gray-700 mb-1">College/Institution</label>
                 <input 
@@ -149,7 +149,7 @@ export default function RegistrationForm() {
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[var(--primary)] focus:border-[var(--primary)]"
                 />
               </div>
-              
+
               <div className="col-span-2">
                 <label htmlFor="event" className="block text-sm font-medium text-gray-700 mb-1">Select Event</label>
                 <select 
@@ -172,7 +172,7 @@ export default function RegistrationForm() {
                   </optgroup>
                 </select>
               </div>
-              
+
               <div className="col-span-1">
                 <label htmlFor="teamSize" className="block text-sm font-medium text-gray-700 mb-1">Team Size</label>
                 <select 
@@ -188,7 +188,7 @@ export default function RegistrationForm() {
                   <option value="5+">5+ Members</option>
                 </select>
               </div>
-              
+
               <div className="col-span-1">
                 <label className="block text-sm font-medium text-gray-700 mb-1">Accommodation</label>
                 <div className="flex items-center space-x-4">
@@ -218,7 +218,7 @@ export default function RegistrationForm() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="col-span-2">
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Special Requirements (if any)</label>
                 <textarea 
@@ -232,7 +232,7 @@ export default function RegistrationForm() {
                 ></textarea>
               </div>
             </div>
-            
+
             <div className="mt-8 text-center">
               <button 
                 type="submit" 
