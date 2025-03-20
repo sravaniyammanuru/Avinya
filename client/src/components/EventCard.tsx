@@ -12,7 +12,7 @@ export default function EventCard({ event }: EventCardProps) {
       <div className="flip-card-inner rounded-xl shadow-lg">
         <div className="flip-card-front bg-white rounded-xl p-6 flex flex-col justify-between">
           <div className={`w-16 h-16 bg-[var(--${colorClass})] bg-opacity-10 rounded-full flex items-center justify-center mx-auto`}>
-            <i className={`fas ${event.icon} text-2xl text-[var(--${colorClass})]`}></i>
+            <i className={`fa-solid ${event.icon} text-2xl text-[var(--${colorClass})]`}></i>
           </div>
           <div className="text-center">
             <h3 className={`text-xl font-poppins font-semibold text-[var(--${colorClass})] mt-4`}>{event.title}</h3>
