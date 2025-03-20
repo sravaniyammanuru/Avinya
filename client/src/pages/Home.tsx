@@ -3,7 +3,6 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import EventsSection from '@/components/EventsSection';
 import Schedule from '@/components/Schedule';
-import RegistrationForm from '@/components/RegistrationForm';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       <About />
       <EventsSection />
       <Schedule />
-      <RegistrationForm />
       <Footer />
     </div>
   );
