@@ -88,6 +88,21 @@ export const technicalEvents: Event[] = [
     type: 'technical',
     color: 'primary'
   },
+  {
+    id: 'query-crackers',
+    title: 'QueryCrackers',
+    description: 'Break the Code, Crack the Query',
+    fee: '₹150 per head ',
+    icon: 'fa-person-chalkboard',
+    details: [
+      ' A thrilling challenge to test your SQL skills, solve queries',
+      'registration fee:- ₹200 per head (₹300/- per team if team contains 2 members)',
+      'Individual or team of 2',
+    ],
+    type: 'technical',
+    color: 'primary'
+  },
+  
 ];
 
 export const nonTechnicalEvents: Event[] = [
