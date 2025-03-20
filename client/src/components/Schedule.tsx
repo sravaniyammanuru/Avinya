@@ -13,12 +13,12 @@ export default function Schedule() {
             Plan your visit with our comprehensive event schedule!
           </p>
         </div>
-        
+
         <div className="flex flex-col md:flex-row gap-8">
           {/* Day 1 */}
-          <div className="w-full md:w-1/2 bg-white rounded-xl shadow-lg p-6 magical-border">
+          <div className="w-full md:w-1/2 bg-white rounded-xl shadow-lg p-6 magical-border hover-scale animate-scale"> {/*This line was changed */}
             <h3 className="text-2xl font-poppins font-semibold text-[var(--primary)] mb-6">Day 1</h3>
-            
+
             <div className="space-y-6">
               {dayOneSchedule.map((item, index) => (
                 <div key={index} className="flex">
@@ -33,11 +33,11 @@ export default function Schedule() {
               ))}
             </div>
           </div>
-          
+
           {/* Day 2 */}
-          <div className="w-full md:w-1/2 bg-white rounded-xl shadow-lg p-6 magical-border">
+          <div className="w-full md:w-1/2 bg-white rounded-xl shadow-lg p-6 magical-border hover-scale animate-scale"> {/*This line was changed */}
             <h3 className="text-2xl font-poppins font-semibold text-[var(--primary)] mb-6">Day 2</h3>
-            
+
             <div className="space-y-6">
               {dayTwoSchedule.map((item, index) => (
                 <div key={index} className="flex">

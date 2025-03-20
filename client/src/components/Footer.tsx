@@ -49,7 +49,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-6 text-[var(--accent)]">Quick Links</h3>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="#home" className="hover:text-[var(--accent)] transition duration-300">Home</a></li>
+              <li><a href="#home" className="hover:text-[var(--accent)] transition duration-300 hover-scale inline-block">Home</a></li>
               <li><a href="#about" className="hover:text-[var(--accent)] transition duration-300">About CBIT</a></li>
               <li><a href="#events" className="hover:text-[var(--accent)] transition duration-300">Events</a></li>
               <li><a href="#schedule" className="hover:text-[var(--accent)] transition duration-300">Schedule</a></li>
