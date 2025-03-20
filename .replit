@@ -52,4 +52,8 @@ args = "pkill -f \"node\" || true"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
+args = "sleep 2"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
 args = "npm run dev"
