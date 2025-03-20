@@ -31,7 +31,13 @@ export default function Hero() {
         </div>
 
         <div className="absolute bottom-8 w-full text-center">
-          <div className="scroll-indicator">
+          <div 
+            className="scroll-indicator cursor-pointer" 
+            onClick={() => {
+              const aboutSection = document.getElementById('about');
+              aboutSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             <div className="dotted-circle"></div>
             <i className="fas fa-chevron-down arrow-down"></i>
           </div>
