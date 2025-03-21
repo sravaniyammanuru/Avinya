@@ -125,24 +125,21 @@
     border: 2px dotted white;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    animation: pulse-border 3s ease-in-out infinite;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .hover\:animate-rotate:hover {
+    animation: rotate 10s linear infinite;
   }
 
   .animate-rotate {
     animation: rotate 10s linear infinite;
   }
   
-  @keyframes pulse-border {
-    0%, 100% {
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    }
-    50% {
-      box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
-    }
-  }
+
   
   @keyframes rotate {
     from {
