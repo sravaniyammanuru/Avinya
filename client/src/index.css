@@ -207,6 +207,40 @@
       filter: drop-shadow(0 0 5px rgba(var(--primary-rgb), 0.6));
     }
   }
+  
+  /* Accommodation section styling */
+  #accommodation {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #accommodation::before,
+  #accommodation::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(var(--primary-rgb), 0.2) 0%, rgba(var(--primary-rgb), 0) 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  #accommodation::before {
+    top: 10%;
+    left: 0;
+    transform: translateX(-50%);
+    opacity: 0.5;
+    animation: float-slow 15s infinite alternate ease-in-out;
+  }
+  
+  #accommodation::after {
+    bottom: 10%;
+    right: 0;
+    transform: translateX(50%);
+    opacity: 0.5;
+    animation: float-slow 10s infinite alternate-reverse ease-in-out;
+  }
 
   /* Custom scrollbar */
   ::-webkit-scrollbar {

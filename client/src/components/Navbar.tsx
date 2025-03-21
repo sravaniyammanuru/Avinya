@@ -20,11 +20,12 @@ export default function Navbar() {
 
           </div>
           
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             <a href="#home" className="font-medium hover:text-[var(--primary)] transition duration-300">Home</a>
             <a href="#about" className="font-medium hover:text-[var(--primary)] transition duration-300">About</a>
             <a href="#events" className="font-medium hover:text-[var(--primary)] transition duration-300">Events</a>
             <a href="#schedule" className="font-medium hover:text-[var(--primary)] transition duration-300">Schedule</a>
+            <a href="#accommodation" className="font-medium hover:text-[var(--primary)] transition duration-300">Accommodation</a>
             <a href="#faq" className="font-medium hover:text-[var(--primary)] transition duration-300">FAQ</a>
             <a href="#register" className="bg-[var(--primary)] hover:bg-[var(--primary-dark)] text-white px-4 py-2 rounded-full font-medium transition duration-300">Register Now</a>
           </div>
@@ -48,6 +49,7 @@ export default function Navbar() {
           <a href="#about" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[var(--primary)] hover:text-white transition duration-300">About</a>
           <a href="#events" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[var(--primary)] hover:text-white transition duration-300">Events</a>
           <a href="#schedule" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[var(--primary)] hover:text-white transition duration-300">Schedule</a>
+          <a href="#accommodation" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[var(--primary)] hover:text-white transition duration-300">Accommodation</a>
           <a href="#faq" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[var(--primary)] hover:text-white transition duration-300">FAQ</a>
           <a href="#register" className="block px-3 py-2 bg-[var(--primary)] text-white rounded-md text-base font-medium hover:bg-[var(--primary-dark)] transition duration-300">Register Now</a>
         </div>
