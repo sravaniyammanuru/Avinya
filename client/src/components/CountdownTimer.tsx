@@ -45,7 +45,7 @@ export default function CountdownTimer() {
     <div className="flex justify-center items-center my-6">
       <div className="grid grid-cols-4 gap-3 md:gap-5">
         {/* Days */}
-        <div className="bg-[#1a1a2e] rounded-full p-3 flex flex-col items-center justify-center shadow-lg border border-purple-900 hover:shadow-[0_0_15px_rgba(138,43,226,0.5)] transition-shadow duration-300 animate-float">
+        <div className="bg-[#1a1a2e] rounded-full p-3 flex flex-col items-center justify-center shadow-lg border border-purple-900 hover:shadow-[0_0_15px_rgba(138,43,226,0.5)] transition-shadow duration-300">
           <div className="text-3xl md:text-5xl font-bold text-[var(--primary)]">
             {formatNumber(timeLeft.days)}
           </div>
@@ -53,7 +53,7 @@ export default function CountdownTimer() {
         </div>
         
         {/* Hours */}
-        <div className="bg-[#1a1a2e] rounded-full p-3 flex flex-col items-center justify-center shadow-lg border border-purple-900 hover:shadow-[0_0_15px_rgba(138,43,226,0.5)] transition-shadow duration-300 animate-float-delayed">
+        <div className="bg-[#1a1a2e] rounded-full p-3 flex flex-col items-center justify-center shadow-lg border border-purple-900 hover:shadow-[0_0_15px_rgba(138,43,226,0.5)] transition-shadow duration-300">
           <div className="text-3xl md:text-5xl font-bold text-[var(--accent)]">
             {formatNumber(timeLeft.hours)}
           </div>
@@ -61,7 +61,7 @@ export default function CountdownTimer() {
         </div>
         
         {/* Minutes */}
-        <div className="bg-[#1a1a2e] rounded-full p-3 flex flex-col items-center justify-center shadow-lg border border-purple-900 hover:shadow-[0_0_15px_rgba(138,43,226,0.5)] transition-shadow duration-300 animate-float">
+        <div className="bg-[#1a1a2e] rounded-full p-3 flex flex-col items-center justify-center shadow-lg border border-purple-900 hover:shadow-[0_0_15px_rgba(138,43,226,0.5)] transition-shadow duration-300">
           <div className="text-3xl md:text-5xl font-bold text-[var(--primary)]">
             {formatNumber(timeLeft.minutes)}
           </div>
@@ -69,7 +69,7 @@ export default function CountdownTimer() {
         </div>
         
         {/* Seconds */}
-        <div className="bg-[#1a1a2e] rounded-full p-3 flex flex-col items-center justify-center shadow-lg border border-purple-900 hover:shadow-[0_0_15px_rgba(138,43,226,0.5)] transition-shadow duration-300 animate-float-delayed">
+        <div className="bg-[#1a1a2e] rounded-full p-3 flex flex-col items-center justify-center shadow-lg border border-purple-900 hover:shadow-[0_0_15px_rgba(138,43,226,0.5)] transition-shadow duration-300">
           <div className="text-3xl md:text-5xl font-bold text-[var(--accent)]">
             {formatNumber(timeLeft.seconds)}
           </div>
