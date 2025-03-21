@@ -23,7 +23,7 @@ export default function Hero() {
         {/* Countdown Timer */}
         <CountdownTimer />
 
-        <div className="flex flex-col sm:flex-row gap-4 mt-6">
+        <div className="flex flex-col sm:flex-row gap-4 mt-6 mb-16">
           <a 
             href="#events" 
             className="px-8 py-3 bg-[var(--accent)] hover:bg-[var(--accent-dark)] text-white font-medium rounded-full transition duration-300 transform hover:scale-105"
@@ -38,15 +38,15 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="absolute bottom-8 w-full text-center">
+        <div className="absolute bottom-12 w-full text-center pointer-events-auto">
           <div 
-            className="scroll-indicator cursor-pointer" 
+            className="scroll-indicator cursor-pointer mx-auto hover:scale-110 transition-transform duration-300" 
             onClick={() => {
               const aboutSection = document.getElementById('about');
               aboutSection?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
-            <div className="dotted-circle flex items-center justify-center">
+            <div className="dotted-circle flex items-center justify-center border-purple-400">
               <ChevronDown className="text-white animate-bounce" size={20} />
             </div>
           </div>

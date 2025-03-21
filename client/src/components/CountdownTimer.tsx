@@ -42,38 +42,38 @@ export default function CountdownTimer() {
   };
 
   return (
-    <div className="flex justify-center items-center my-8">
-      <div className="grid grid-cols-4 gap-4 md:gap-6">
+    <div className="flex justify-center items-center my-6">
+      <div className="grid grid-cols-4 gap-3 md:gap-5">
         {/* Days */}
-        <div className="bg-[#1a1a2e] rounded-xl p-4 flex flex-col items-center justify-center shadow-lg border border-purple-900">
-          <div className="text-4xl md:text-6xl font-bold text-[var(--primary)]">
+        <div className="bg-[#1a1a2e] rounded-full p-3 flex flex-col items-center justify-center shadow-lg border border-purple-900 hover:shadow-[0_0_15px_rgba(138,43,226,0.5)] transition-shadow duration-300 animate-float">
+          <div className="text-3xl md:text-5xl font-bold text-[var(--primary)]">
             {formatNumber(timeLeft.days)}
           </div>
-          <div className="text-gray-400 text-sm md:text-base mt-1">Days</div>
+          <div className="text-gray-400 text-xs md:text-sm mt-1">Days</div>
         </div>
         
         {/* Hours */}
-        <div className="bg-[#1a1a2e] rounded-xl p-4 flex flex-col items-center justify-center shadow-lg border border-purple-900">
-          <div className="text-4xl md:text-6xl font-bold text-[var(--primary)]">
+        <div className="bg-[#1a1a2e] rounded-full p-3 flex flex-col items-center justify-center shadow-lg border border-purple-900 hover:shadow-[0_0_15px_rgba(138,43,226,0.5)] transition-shadow duration-300 animate-float-delayed">
+          <div className="text-3xl md:text-5xl font-bold text-[var(--accent)]">
             {formatNumber(timeLeft.hours)}
           </div>
-          <div className="text-gray-400 text-sm md:text-base mt-1">Hours</div>
+          <div className="text-gray-400 text-xs md:text-sm mt-1">Hours</div>
         </div>
         
         {/* Minutes */}
-        <div className="bg-[#1a1a2e] rounded-xl p-4 flex flex-col items-center justify-center shadow-lg border border-purple-900">
-          <div className="text-4xl md:text-6xl font-bold text-[var(--primary)]">
+        <div className="bg-[#1a1a2e] rounded-full p-3 flex flex-col items-center justify-center shadow-lg border border-purple-900 hover:shadow-[0_0_15px_rgba(138,43,226,0.5)] transition-shadow duration-300 animate-float">
+          <div className="text-3xl md:text-5xl font-bold text-[var(--primary)]">
             {formatNumber(timeLeft.minutes)}
           </div>
-          <div className="text-gray-400 text-sm md:text-base mt-1">Minutes</div>
+          <div className="text-gray-400 text-xs md:text-sm mt-1">Minutes</div>
         </div>
         
         {/* Seconds */}
-        <div className="bg-[#1a1a2e] rounded-xl p-4 flex flex-col items-center justify-center shadow-lg border border-purple-900">
-          <div className="text-4xl md:text-6xl font-bold text-[var(--primary)]">
+        <div className="bg-[#1a1a2e] rounded-full p-3 flex flex-col items-center justify-center shadow-lg border border-purple-900 hover:shadow-[0_0_15px_rgba(138,43,226,0.5)] transition-shadow duration-300 animate-float-delayed">
+          <div className="text-3xl md:text-5xl font-bold text-[var(--accent)]">
             {formatNumber(timeLeft.seconds)}
           </div>
-          <div className="text-gray-400 text-sm md:text-base mt-1">Seconds</div>
+          <div className="text-gray-400 text-xs md:text-sm mt-1">Seconds</div>
         </div>
       </div>
     </div>
