@@ -64,10 +64,7 @@ export default function Footer() {
                 <i className="fas fa-utensils text-[var(--accent)]"></i>
                 <span>Lunch provided on both days</span>
               </li>
-              <li className="flex items-center space-x-3">
-                <i className="fas fa-bed text-[var(--accent)]"></i>
-                <span>Accommodation available for ₹200</span>
-              </li>
+
               <li className="flex items-center space-x-3">
                 <i className="fas fa-calendar-alt text-[var(--accent)]"></i>
                 <span>Event Dates: 10 & 11 of april 2k25</span>

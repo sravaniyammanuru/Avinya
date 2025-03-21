@@ -39,7 +39,8 @@ export const technicalEvents: Event[] = [
       'The event will commence at 11:00 AM on Day 1 and conclude at 11:00 AM on Day 2, spanning a full 24-hour experience.',
       'Problem statements will be provided',
       'Mentors and co-ordinators available for guidance',
-      'Team size:- min 4 - max 6'
+      'Team size:- min 4 - max 6',
+      'Registration fee:-₹400 per head',
 
     ],
     type: 'technical',
@@ -56,6 +57,7 @@ export const technicalEvents: Event[] = [
       'Team-based presentation',
       'Projects judged on innovation, feasibility, and presentation',
       '₹300 per team',
+      'Team size should be 1 or 2',
     ],
     type: 'technical',
     color: 'primary'
@@ -118,7 +120,7 @@ export const nonTechnicalEvents: Event[] = [
       'Individual registrations',
       'Bring your own device',
       'Tournament style competition',
-      'Registration fee:- ₹100 per head'
+      'Registration fee:- ₹300 per team'
     ],
     type: 'non-technical',
     color: 'secondary'
@@ -131,7 +133,6 @@ export const nonTechnicalEvents: Event[] = [
     icon: 'fa-music',
     details: [
       'Individual or team participation',
-      'Songs, dances',
       'Special discount for teams of 5+',
       'Registration fee:- 150/- per head (100/- per head for 5+ in a team)', 
     ],
@@ -142,13 +143,13 @@ export const nonTechnicalEvents: Event[] = [
     id: 'one-min-games',
     title: '1-Minute Games',
     description: 'Quick-fire fun challenges',
-    fee: '₹100 per head',
+    fee: '₹49 per head',
     icon: 'fa-stopwatch',
     details: [
       'Various mini-games',
       'Individual participation',
       'Fast-paced and exciting',
-      'registration fee:- 100/- per head',
+      'registration fee:- 49/- per head',
     ],
     type: 'non-technical',
     color: 'secondary'
