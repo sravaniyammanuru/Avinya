@@ -1,6 +1,29 @@
 import { dayOneEvents, dayTwoEvents } from '@/data/events';
+import { 
+  Laptop, Database, PresentationIcon, Code, PenTool, 
+  Gamepad, MapPin, Timer, Camera, Music, Calendar 
+} from 'lucide-react';
 
 export default function Schedule() {
+  // Helper function to get icon based on event name
+  const getEventIcon = (eventName: string) => {
+    const name = eventName.toLowerCase();
+    
+    if (name.includes('hack')) return <Laptop size={18} />;
+    if (name.includes('tech')) return <Database size={18} />;
+    if (name.includes('slide') || name.includes('project') || name.includes('expo')) return <PresentationIcon size={18} />;
+    if (name.includes('code')) return <Code size={18} />;
+    if (name.includes('query')) return <Database size={18} />;
+    if (name.includes('web') || name.includes('design')) return <PenTool size={18} />;
+    if (name.includes('sport')) return <Gamepad size={18} />;
+    if (name.includes('treasure') || name.includes('hunt')) return <MapPin size={18} />;
+    if (name.includes('minute') || name.includes('games')) return <Timer size={18} />;
+    if (name.includes('photo')) return <Camera size={18} />;
+    if (name.includes('cultural') || name.includes('song') || name.includes('dance')) return <Music size={18} />;
+    
+    return <Calendar size={18} />;
+  };
+
   return (
     <section id="schedule" className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
       {/* Magical decorative elements */}
@@ -41,8 +64,8 @@ export default function Schedule() {
                     style={{ transitionDelay: `${index * 50}ms` }}
                   >
                     <div className="flex items-center">
-                      <div className="w-8 h-8 rounded-full bg-[var(--primary)] bg-opacity-10 flex items-center justify-center mr-4">
-                        <div className="w-3 h-3 bg-[var(--primary)] rounded-full"></div>
+                      <div className="w-8 h-8 rounded-full bg-[var(--primary)] bg-opacity-10 flex items-center justify-center mr-4 text-[var(--primary)]">
+                        {getEventIcon(event)}
                       </div>
                       <h4 className="text-lg font-medium">{event}</h4>
                     </div>
@@ -73,8 +96,8 @@ export default function Schedule() {
                     style={{ transitionDelay: `${index * 50}ms` }}
                   >
                     <div className="flex items-center">
-                      <div className="w-8 h-8 rounded-full bg-[var(--accent)] bg-opacity-10 flex items-center justify-center mr-4">
-                        <div className="w-3 h-3 bg-[var(--accent)] rounded-full"></div>
+                      <div className="w-8 h-8 rounded-full bg-[var(--accent)] bg-opacity-10 flex items-center justify-center mr-4 text-[var(--accent)]">
+                        {getEventIcon(event)}
                       </div>
                       <h4 className="text-lg font-medium">{event}</h4>
                     </div>
