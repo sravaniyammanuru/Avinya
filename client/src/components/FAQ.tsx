@@ -16,38 +16,30 @@ export default function FAQ() {
   const faqItems: FAQItem[] = [
     {
       question: "Can I cancel my Participation Before Avinya Begins?",
-      answer: "Yes, you can cancel your registration up to 5 days before the event. Please contact us at avinya@cbit.ac.in with your registration details for cancellation."
+      answer: "No, you cannot cancel your registration and it was a non refundable payment."
     },
     {
       question: "What is Avinya 2025?",
-      answer: "Avinya is the annual technical and cultural symposium conducted by Chaitanya Bharathi Institute of Technology (CBIT). It features technical workshops, coding competitions, cultural performances, and various other exciting events."
+      answer: "Avinya is the technical and cultural symposium conducted by Chaitanya Bharathi Institute of Technology (CBIT). It features coding competitions, cultural performances, and various other exciting events."
     },
     {
       question: "Who can participate in Avinya?",
-      answer: "Avinya is open to all college students. Participants from any recognized educational institution can register for the events. Some events may have specific eligibility criteria, which will be mentioned in their respective guidelines."
-    },
-    {
-      question: "What topics will be covered in the workshops?",
-      answer: "Workshops at Avinya 2025 will cover cutting-edge technologies including Artificial Intelligence, Blockchain, IoT, Robotics, Web Development, and Cloud Computing. Each workshop is designed to provide hands-on experience and practical knowledge."
-    },
-    {
-      question: "What is the prize pool for the hackathon?",
-      answer: "The hackathon at Avinya 2025 offers exciting prizes worth over ₹1,00,000, including cash prizes, tech gadgets, internship opportunities, and sponsored goodies from our partners."
+      answer: "Avinya is open to all college students. Participants from any recognized educational institution can register for the events."
     },
     {
       question: "Do I need a team to participate in the hackathon?",
-      answer: "Yes, the hackathon requires teams of 2-4 members. However, we also have a team formation platform where individual participants can find teammates before the event."
+      answer: "Yes, the hackathon requires teams of 4-6 members."
     },
     {
       question: "Will I receive a certificate for attending?",
-      answer: "Yes, all participants will receive digital certificates of participation. Winners and runners-up will receive special achievement certificates. Workshop attendees will get separate certification for each workshop they complete."
+      answer: "Yes, all participants will receive certificates of participation. Winners and runners-up will receive special achievement certificates."
     },
     {
       question: "What should I bring for the event?",
-      answer: "Please bring your college ID, registration confirmation, laptop (if participating in technical events), and any specific requirements mentioned for individual events. For overnight events, please check the accommodation guidelines."
+      answer: "Please bring your college ID, registration confirmation, laptop (if participating in hackathon,project expo events), and any specific requirements mentioned for individual events. For overnight events, please check the accommodation guidelines."
     },
     {
-      question: "Can I attend only the workshops or the hackathon?",
+      question: "Can I attend only hackathon?",
       answer: "Absolutely! You can register for specific events that interest you. Each event has separate registration options, allowing you to customize your Avinya experience based on your preferences."
     }
   ];
@@ -65,22 +57,7 @@ export default function FAQ() {
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="lg:pr-8">
-            <h3 className="text-4xl font-bold text-white mb-6">
-              Do You Have any questions about the <span className="text-[var(--accent)]">Avinya</span> ?
-            </h3>
-            <p className="text-gray-300 mb-8">
-              Find answers to common questions about our events, registration process, 
-              participation requirements, and more. If you don't see your question here, 
-              feel free to contact us.
-            </p>
-            <a 
-              href="#register" 
-              className="inline-block px-8 py-3 bg-[var(--accent)] hover:bg-[var(--accent-dark)] text-white font-medium rounded-full transition duration-300 transform hover:scale-105"
-            >
-              Register Now
-            </a>
-          </div>
+         
           
           <div className="space-y-4">
             {faqItems.slice(0, 5).map((item, index) => (

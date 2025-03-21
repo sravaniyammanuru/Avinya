@@ -11,19 +11,19 @@ export default function Footer() {
             <p className="text-gray-400 mt-3 text-lg">A Celebration of Talent and Innovation</p>
           </div>
           
-          <div className="flex justify-center md:justify-end space-x-8">
-            <a href="#" className="text-gray-400 hover:text-[var(--accent)] transition duration-300">
-              <i className="fab fa-facebook-f text-2xl"></i>
-            </a>
-            <a href="#" className="text-gray-400 hover:text-[var(--accent)] transition duration-300">
-              <i className="fab fa-twitter text-2xl"></i>
-            </a>
-            <a href="#" className="text-gray-400 hover:text-[var(--accent)] transition duration-300">
-              <i className="fab fa-instagram text-2xl"></i>
-            </a>
-            <a href="#" className="text-gray-400 hover:text-[var(--accent)] transition duration-300">
-              <i className="fab fa-linkedin-in text-2xl"></i>
-            </a>
+          <div className="flex justify-center md:justify-end">
+            <div className="instagram-container">
+              <a 
+                href="https://www.instagram.com/avinya_2k25?utm_source=qr&igsh=Y2VpYWF5dmIyaDEw" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[var(--accent)] hover:text-white transition duration-300"
+                aria-label="Follow us on Instagram"
+              >
+                <i className="fab fa-instagram text-6xl instagram-icon"></i>
+              </a>
+              <p className="text-gray-400 mt-2 text-xs md:text-sm">Follow us</p>
+            </div>
           </div>
         </div>
         
@@ -37,11 +37,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <i className="fas fa-phone-alt text-[var(--accent)]"></i>
-                <span>+91 9876543210</span>
+                <span>+91  86881 33137 , 91006 52703 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <i className="fas fa-envelope text-[var(--accent)]"></i>
-                <span>avinya@cbit.edu.in</span>
+                <span>avinya2k25cbit@gmail.com</span>
               </li>
             </ul>
           </div>
