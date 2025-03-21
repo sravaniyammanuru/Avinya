@@ -185,16 +185,16 @@ export const nonTechnicalEvents: Event[] = [
 ];
 
 export const dayOneEvents = [
-  'Hackfinity',
-  'Techvinya',
-  'Sliddeck',
-  'Codesrusti',
-  'Querycrackers',
+  'HackFinity',
+  'TechVinya',
+  'SlidDeck',
+  'CodeSrusti',
+  'QueryCrackers', 
   'Web Design'
 ];
 
 export const dayTwoEvents = [
-  'E-Project Expo',
+  'Project Expo',
   'E-Sports',
   'Treasure Hunt',
   '1-Minute Games',

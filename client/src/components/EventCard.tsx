@@ -1,4 +1,5 @@
 import { Event } from '@/lib/types';
+import { CalendarDays, Code, Laptop, PresentationIcon, PenTool, Database, Gamepad, Music, Timer, MapPin, Camera } from 'lucide-react';
 
 interface EventCardProps {
   event: Event;
@@ -16,6 +17,35 @@ export default function EventCard({ event }: EventCardProps) {
     e.currentTarget.style.transform = 'translateY(0)';
   };
   
+  // Map the icon string to a Lucide icon component
+  const getIconComponent = (iconName: string) => {
+    switch (iconName) {
+      case 'fa-code':
+        return <Code className={`text-[var(--${colorClass})]`} size={24} />;
+      case 'fa-laptop-code':
+        return <Laptop className={`text-[var(--${colorClass})]`} size={24} />;
+      case 'fa-diagram-project':
+      case 'fa-person-chalkboard':
+        return <PresentationIcon className={`text-[var(--${colorClass})]`} size={24} />;
+      case 'fa-paintbrush':
+        return <PenTool className={`text-[var(--${colorClass})]`} size={24} />;
+      case 'fa-question-circle':
+        return <Database className={`text-[var(--${colorClass})]`} size={24} />;
+      case 'fa-gamepad':
+        return <Gamepad className={`text-[var(--${colorClass})]`} size={24} />;
+      case 'fa-music':
+        return <Music className={`text-[var(--${colorClass})]`} size={24} />;
+      case 'fa-stopwatch':
+        return <Timer className={`text-[var(--${colorClass})]`} size={24} />;
+      case 'fa-map-location-dot':
+        return <MapPin className={`text-[var(--${colorClass})]`} size={24} />;
+      case 'fa-camera':
+        return <Camera className={`text-[var(--${colorClass})]`} size={24} />;
+      default:
+        return <CalendarDays className={`text-[var(--${colorClass})]`} size={24} />;
+    }
+  };
+  
   return (
     <div 
       className="flip-card h-80 animate-fade-scale"
@@ -25,7 +55,7 @@ export default function EventCard({ event }: EventCardProps) {
       <div className="flip-card-inner rounded-xl shadow-lg">
         <div className="flip-card-front bg-white rounded-xl p-6 flex flex-col justify-between">
           <div className={`w-16 h-16 bg-[var(--${colorClass})] bg-opacity-10 rounded-full flex items-center justify-center mx-auto`}>
-            <i className={`fa-solid ${event.icon || 'fa-calendar-days'} text-2xl text-[var(--${colorClass})]`}></i>
+            {getIconComponent(event.icon)}
           </div>
           <div className="text-center">
             <h3 className={`text-xl font-poppins font-semibold text-[var(--${colorClass})] mt-4`}>{event.title}</h3>
