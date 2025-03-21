@@ -1,4 +1,6 @@
 import ParticleBackground from './ParticleBackground';
+import CountdownTimer from './CountdownTimer';
+import { ChevronDown } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -10,12 +12,18 @@ export default function Hero() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-poppins font-bold text-white mb-6 animate-slide-in">
             Welcome to <span className="text-[var(--accent)] animate-shimmer">Avinya</span>
           </h1>
-          <p className="text-xl sm:text-2xl text-white font-quicksand mb-8">
+          <p className="text-xl sm:text-2xl text-white font-quicksand mb-4">
             A Celebration of Talent and Innovation!
           </p>
+          <p className="text-lg text-[var(--accent)] font-medium mb-2">
+            Join us on April 10-11, 2025
+          </p>
         </div>
+        
+        {/* Countdown Timer */}
+        <CountdownTimer />
 
-        <div className="flex flex-col sm:flex-row gap-4 mt-8">
+        <div className="flex flex-col sm:flex-row gap-4 mt-6">
           <a 
             href="#events" 
             className="px-8 py-3 bg-[var(--accent)] hover:bg-[var(--accent-dark)] text-white font-medium rounded-full transition duration-300 transform hover:scale-105"
@@ -38,8 +46,9 @@ export default function Hero() {
               aboutSection?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
-            <div className="dotted-circle"></div>
-            <i className="fas fa-chevron-down arrow-down"></i>
+            <div className="dotted-circle flex items-center justify-center">
+              <ChevronDown className="text-white animate-bounce" size={20} />
+            </div>
           </div>
         </div>
       </div>

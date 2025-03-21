@@ -70,6 +70,26 @@
     }
   }
   
+  /* Scroll indicator */
+  .scroll-indicator {
+    width: 36px;
+    height: 36px;
+    margin: 0 auto;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+  }
+
+  .scroll-indicator:hover {
+    opacity: 1;
+  }
+
+  .dotted-circle {
+    width: 36px;
+    height: 36px;
+    border: 2px dotted white;
+    border-radius: 50%;
+  }
+  
   /* Card effects */
   .magical-card {
     position: relative;
