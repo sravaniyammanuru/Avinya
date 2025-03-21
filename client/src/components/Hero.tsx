@@ -8,8 +8,8 @@ export default function Hero() {
       <ParticleBackground count={100} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[calc(100vh-80px)] flex flex-col justify-center items-center text-center">
-        <div className="mt-[-10vh]">
-          <div className="floating">
+        <div className="mt-[-5vh] flex flex-col items-center">
+          <div className="floating text-center">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-poppins font-bold text-white mb-6 animate-slide-in">
               Welcome to <span className="text-[var(--accent)] animate-shimmer">Avinya</span>
             </h1>
@@ -24,7 +24,7 @@ export default function Hero() {
           {/* Countdown Timer */}
           <CountdownTimer />
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-6">
+          <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center items-center">
             <a 
               href="#events" 
               className="px-8 py-3 bg-[var(--accent)] hover:bg-[var(--accent-dark)] text-white font-medium rounded-full transition duration-300 transform hover:scale-105"
