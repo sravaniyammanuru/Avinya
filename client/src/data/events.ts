@@ -166,19 +166,7 @@ export const nonTechnicalEvents: Event[] = [
     type: 'non-technical',
     color: 'secondary'
   },
-  {
-    id: 'meme-making',
-    title: 'Meme Making',
-    description: 'Create viral content',
-    fee: '₹49 per head',
-    icon: 'fa-face-laugh',
-    details: [
-      'Create original memes on the event(Avasya)',
-      'refer more and win more',
-    ],
-    type: 'non-technical',
-    color: 'secondary'
-  },
+  
   {
     id: 'photography',
     title: 'Photography',
@@ -195,21 +183,26 @@ export const nonTechnicalEvents: Event[] = [
 ];
 
 export const dayOneSchedule = [
-  { time: '8:30 to 9:30', title: 'Registration & Welcome', location: 'location' },
-  { time: '9:30 to 10:00', title: 'Inauguaration', location: 'location' },
-  {time: '10:30 to ?', title:'ppt', location:'location'},
-  {time: '10:30 to ?', title:'sql', location:'location'},
-  { time: '11:00 AM', title: 'Hackathon Begins', location: 'Location' },
-  { time: '11:30 AM to ?', title: 'Coding', location: 'location' },
-  { time: '1:00 PM to 2:00', title: 'Lunch', location: 'location' },
-  { time: '2:30 PM to ?', title: 'Quiz', location: 'location' },
+  { time: '8:30 to 9:30', title: 'Registration & Welcome', location: 'Main Hall' },
+  { time: '9:30 to 10:00', title: 'Inauguration', location: 'Seminar Hall' },
+  { time: '10:00 to 12:00', title: 'Hackfinity', location: 'Lab Complex' },
+  { time: '10:30 to 12:30', title: 'Techvinya', location: 'Conference Room' },
+  { time: '11:30 to 1:30', title: 'Sliddeck', location: 'Presentation Hall' },
+  { time: '1:00 to 2:00', title: 'Lunch', location: 'Cafeteria' },
+  { time: '2:00 to 4:00', title: 'Codesrusti', location: 'Computer Lab' },
+  { time: '2:30 to 4:30', title: 'Querycrackers', location: 'Database Lab' },
+  { time: '3:00 to 5:00', title: 'Web Design', location: 'Design Lab' },
 ];
 
 export const dayTwoSchedule = [
-  { time: '8:30 AM to 9:30', title: 'Registration Day 2', location: 'location' },
-  { time: '10:00 AM to 10:30', title: 'welcome(Instructions)', location: 'location' },
-  { time: '11:00 AM', title: 'Hackathon Ends', location: 'Lab Complex' },
-  { time: '11:30 AM to ?', title: 'Project expo', location: 'location' },
-  { time: '? to ?', title: '1-min-games', location: 'Sports room' },
-  { time: '3:30 PM', title: 'Ending nore,prize distribution', location: 'seminar hall' },
+  { time: '8:30 to 9:30', title: 'Registration Day 2', location: 'Main Hall' },
+  { time: '10:00 to 10:30', title: 'Welcome Instructions', location: 'Seminar Hall' },
+  { time: '10:30 to 12:30', title: 'E-Project Expo', location: 'Exhibition Hall' },
+  { time: '11:00 to 1:00', title: 'E-Sports', location: 'Gaming Arena' },
+  { time: '11:30 to 1:30', title: 'Treasure Hunt', location: 'Campus Wide' },
+  { time: '1:00 to 2:00', title: 'Lunch', location: 'Cafeteria' },
+  { time: '2:00 to 3:30', title: '1-Minute Games', location: 'Recreation Area' },
+  { time: '2:30 to 4:30', title: 'Photography', location: 'Campus Ground' },
+  { time: '3:00 to 5:00', title: 'Culturals (Songs, Dance)', location: 'Open Auditorium' },
+  { time: '5:30 to 6:30', title: 'Prize Distribution', location: 'Seminar Hall' },
 ];
