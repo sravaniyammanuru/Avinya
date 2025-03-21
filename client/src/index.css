@@ -22,6 +22,38 @@
     animation: float 8s ease-in-out 2s infinite;
   }
   
+  .animate-spin-slow {
+    animation: rotate 20s linear infinite;
+  }
+  
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+  
+  .animation-delay-700 {
+    animation-delay: 0.7s;
+  }
+  
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes float-slow {
+    0% {
+      transform: translateY(0px) translateX(0px);
+    }
+    50% {
+      transform: translateY(-15px) translateX(15px);
+    }
+    100% {
+      transform: translateY(0px) translateX(0px);
+    }
+  }
+  
   .animate-pulse {
     animation: pulse 4s ease-in-out infinite;
   }
