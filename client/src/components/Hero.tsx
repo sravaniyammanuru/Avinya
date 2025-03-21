@@ -47,8 +47,8 @@ export default function Hero() {
                 aboutSection?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <div className="dotted-circle flex items-center justify-center border-purple-400">
-                <ChevronDown className="text-white animate-bounce" size={24} />
+              <div className="dotted-circle flex items-center justify-center border-purple-400 animate-rotate">
+                <ChevronDown className="text-white" size={20} />
               </div>
             </div>
           </div>
