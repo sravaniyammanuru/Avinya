@@ -64,7 +64,7 @@ export default function Schedule() {
                     style={{ transitionDelay: `${index * 50}ms` }}
                   >
                     <div className="flex items-center">
-                      <div className="w-8 h-8 rounded-full bg-[var(--primary)] bg-opacity-10 flex items-center justify-center mr-4 text-[var(--primary)]">
+                      <div className="w-10 h-10 rounded-full bg-[var(--primary)] text-white flex items-center justify-center mr-4">
                         {getEventIcon(event)}
                       </div>
                       <h4 className="text-lg font-medium">{event}</h4>
@@ -96,7 +96,7 @@ export default function Schedule() {
                     style={{ transitionDelay: `${index * 50}ms` }}
                   >
                     <div className="flex items-center">
-                      <div className="w-8 h-8 rounded-full bg-[var(--accent)] bg-opacity-10 flex items-center justify-center mr-4 text-[var(--accent)]">
+                      <div className="w-10 h-10 rounded-full bg-[var(--accent)] text-white flex items-center justify-center mr-4">
                         {getEventIcon(event)}
                       </div>
                       <h4 className="text-lg font-medium">{event}</h4>

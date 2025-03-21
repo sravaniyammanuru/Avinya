@@ -21,28 +21,28 @@ export default function EventCard({ event }: EventCardProps) {
   const getIconComponent = (iconName: string) => {
     switch (iconName) {
       case 'fa-code':
-        return <Code className={`text-[var(--${colorClass})]`} size={24} />;
+        return <Code size={24} />;
       case 'fa-laptop-code':
-        return <Laptop className={`text-[var(--${colorClass})]`} size={24} />;
+        return <Laptop size={24} />;
       case 'fa-diagram-project':
       case 'fa-person-chalkboard':
-        return <PresentationIcon className={`text-[var(--${colorClass})]`} size={24} />;
+        return <PresentationIcon size={24} />;
       case 'fa-paintbrush':
-        return <PenTool className={`text-[var(--${colorClass})]`} size={24} />;
+        return <PenTool size={24} />;
       case 'fa-question-circle':
-        return <Database className={`text-[var(--${colorClass})]`} size={24} />;
+        return <Database size={24} />;
       case 'fa-gamepad':
-        return <Gamepad className={`text-[var(--${colorClass})]`} size={24} />;
+        return <Gamepad size={24} />;
       case 'fa-music':
-        return <Music className={`text-[var(--${colorClass})]`} size={24} />;
+        return <Music size={24} />;
       case 'fa-stopwatch':
-        return <Timer className={`text-[var(--${colorClass})]`} size={24} />;
+        return <Timer size={24} />;
       case 'fa-map-location-dot':
-        return <MapPin className={`text-[var(--${colorClass})]`} size={24} />;
+        return <MapPin size={24} />;
       case 'fa-camera':
-        return <Camera className={`text-[var(--${colorClass})]`} size={24} />;
+        return <Camera size={24} />;
       default:
-        return <CalendarDays className={`text-[var(--${colorClass})]`} size={24} />;
+        return <CalendarDays size={24} />;
     }
   };
   
@@ -54,7 +54,7 @@ export default function EventCard({ event }: EventCardProps) {
     >
       <div className="flip-card-inner rounded-xl shadow-lg">
         <div className="flip-card-front bg-white rounded-xl p-6 flex flex-col justify-between">
-          <div className={`w-16 h-16 bg-[var(--${colorClass})] bg-opacity-10 rounded-full flex items-center justify-center mx-auto`}>
+          <div className={`w-16 h-16 bg-[var(--${colorClass})] rounded-full flex items-center justify-center mx-auto text-white`}>
             {getIconComponent(event.icon)}
           </div>
           <div className="text-center">
