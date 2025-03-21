@@ -41,7 +41,7 @@ export default function Hero() {
           
           <div className="mt-12">
             <div 
-              className="scroll-indicator cursor-pointer mx-auto hover:scale-110 transition-transform duration-300" 
+              className="scroll-indicator cursor-pointer mx-auto" 
               onClick={() => {
                 const aboutSection = document.getElementById('about');
                 aboutSection?.scrollIntoView({ behavior: 'smooth' });
