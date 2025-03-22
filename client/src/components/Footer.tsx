@@ -74,8 +74,8 @@ export default function Footer() {
         </div>
         
         <div className="pt-8 text-center border-t border-gray-800">
-          <p className="text-gray-400">&copy; {new Date().getFullYear()} Avinya - CBIT Symposium. All rights reserved.</p>
-          <p className="mt-2 text-gray-400">Designed with <i className="fas fa-heart text-[var(--accent)]"></i> for CBIT</p>
+          <p className="text-gray-400">&copy; {new Date().getFullYear()} All rights reserved.</p>
+          
         </div>
       </div>
     </footer>

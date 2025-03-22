@@ -173,7 +173,7 @@ export const nonTechnicalEvents: Event[] = [
   {
     id: 'photography',
     title: 'Photography',
-    description: 'Songs, Dances',
+    description: 'Capture the Moments',
     fee: '₹100/- per head',
     icon: 'fa-music',
     details: [
