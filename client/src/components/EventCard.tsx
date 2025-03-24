@@ -42,6 +42,8 @@ export default function EventCard({ event }: EventCardProps) {
         return 'https://tally.so/r/mDa4LX'; // QueryCrackers
       case 'web-design':
         return 'https://tally.so/r/mY952z'; // Web Design
+      case 'techvinya':
+        return 'https://tally.so/r/31Rkql'; // Techvinya
       default:
         return '#register'; // Default fallback to registration section
     }
