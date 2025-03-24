@@ -40,6 +40,8 @@ export default function EventCard({ event }: EventCardProps) {
         return 'https://tally.so/r/wLO9rv'; // Treasure Hunt
       case 'query-crackers':
         return 'https://tally.so/r/mDa4LX'; // QueryCrackers
+      case 'web-design':
+        return 'https://tally.so/r/mY952z'; // Web Design
       default:
         return '#register'; // Default fallback to registration section
     }
