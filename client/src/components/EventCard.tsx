@@ -104,14 +104,20 @@ export default function EventCard({ event }: EventCardProps) {
               ))}
             </ul>
           </div>
-          <a 
-            href={getRegistrationLink(event.id)} 
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`mt-4 ${event.type === 'technical' ? 'bg-white text-[var(--primary)]' : 'bg-white text-[var(--secondary)]'} font-medium px-4 py-2 rounded-full inline-block hover:bg-gray-100 transition duration-300`}
-          >
-            Register Now
-          </a>
+          {event.id === 'one-min-games' ? (
+            <div className={`mt-4 ${event.type === 'technical' ? 'bg-white text-[var(--primary)]' : 'bg-white text-[var(--secondary)]'} font-medium px-4 py-2 rounded-full inline-block`}>
+              Spot Registration
+            </div>
+          ) : (
+            <a 
+              href={getRegistrationLink(event.id)} 
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`mt-4 ${event.type === 'technical' ? 'bg-white text-[var(--primary)]' : 'bg-white text-[var(--secondary)]'} font-medium px-4 py-2 rounded-full inline-block hover:bg-gray-100 transition duration-300`}
+            >
+              Register Now
+            </a>
+          )}
         </div>
       </div>
     </div>
