@@ -128,7 +128,21 @@ export const nonTechnicalEvents: Event[] = [
   {
     id: 'culturals',
     title: 'Culturals',
-    description: 'Songs, Dances',
+    description: 'Dances',
+    fee: '₹150 per head (₹100 for 5+)',
+    icon: 'fa-music',
+    details: [
+      'Individual or team participation',
+      'Special discount for teams of 5+',
+      'Registration fee:- 150/- per head (100/- per head for 5+ in a team)', 
+    ],
+    type: 'non-technical',
+    color: 'secondary'
+  },
+  {
+    id: 'culturals',
+    title: 'Singing',
+    description:'Songs',
     fee: '₹150 per head (₹100 for 5+)',
     icon: 'fa-music',
     details: [
