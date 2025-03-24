@@ -140,7 +140,7 @@ export const nonTechnicalEvents: Event[] = [
     color: 'secondary'
   },
   {
-    id: 'culturals',
+    id: 'singing',
     title: 'Singing',
     description:'Songs',
     fee: '₹150 per head (₹100 for 5+)',

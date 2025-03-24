@@ -17,6 +17,32 @@ export default function EventCard({ event }: EventCardProps) {
     e.currentTarget.style.transform = 'translateY(0)';
   };
   
+  // Get registration link based on event ID
+  const getRegistrationLink = (eventId: string) => {
+    switch (eventId) {
+      case 'coding':
+        return 'https://tally.so/r/3lzbpV'; // CodeSrusti
+      case 'project-expo':
+        return 'https://tally.so/r/mVNLr6'; // Project Expo
+      case 'esports':
+        return 'https://tally.so/r/nGb68o'; // E-sports
+      case 'culturals':
+        return 'https://tally.so/r/waz9b9'; // Culturals (Dance)
+      case 'singing':
+        return 'https://tally.so/r/mZe8bB'; // Singing
+      case 'photography':
+        return 'https://tally.so/r/wbzqpL'; // Photography
+      case 'hackathon':
+        return 'https://tally.so/r/3NPpkp'; // HackFinity
+      case 'ppt':
+        return 'https://tally.so/r/3XQx6d'; // SlideDeck
+      case 'treasure-hunt':
+        return 'https://tally.so/r/wLO9rv'; // Treasure Hunt
+      default:
+        return '#register'; // Default fallback to registration section
+    }
+  };
+  
   // Map the icon string to a Lucide icon component
   const getIconComponent = (iconName: string) => {
     switch (iconName) {
@@ -77,7 +103,9 @@ export default function EventCard({ event }: EventCardProps) {
             </ul>
           </div>
           <a 
-            href="#register" 
+            href={getRegistrationLink(event.id)} 
+            target="_blank"
+            rel="noopener noreferrer"
             className={`mt-4 ${event.type === 'technical' ? 'bg-white text-[var(--primary)]' : 'bg-white text-[var(--secondary)]'} font-medium px-4 py-2 rounded-full inline-block hover:bg-gray-100 transition duration-300`}
           >
             Register Now
