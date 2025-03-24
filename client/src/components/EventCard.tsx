@@ -38,6 +38,8 @@ export default function EventCard({ event }: EventCardProps) {
         return 'https://tally.so/r/3XQx6d'; // SlideDeck
       case 'treasure-hunt':
         return 'https://tally.so/r/wLO9rv'; // Treasure Hunt
+      case 'query-crackers':
+        return 'https://tally.so/r/mDa4LX'; // QueryCrackers
       default:
         return '#register'; // Default fallback to registration section
     }
