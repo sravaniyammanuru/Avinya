@@ -19,12 +19,12 @@ export const technicalEvents: Event[] = [
     id: 'coding',
     title: 'CodeSrusti',
     description: 'Showcase your coding skills',
-    fee: '₹200 per head (₹300/- per team if team contains 2 members)',
+    fee: '₹200 per head',
     icon: 'fa-code',
     details: [
       'Multiple programming languages supported',
-      'Individual or team of 2',
-      'registration fee:- ₹200 per head (₹300/- per team if team contains 2 members)'
+      'Individual Participation',
+      'registration fee:- ₹200 per head'
     ],
     type: 'technical',
     color: 'primary'
@@ -54,7 +54,6 @@ export const technicalEvents: Event[] = [
     icon: 'fa-diagram-project',
     details: [
       'Expo starts after Hackathon ends (Day 2)',
-      'Team-based presentation',
       'Projects judged on innovation, feasibility, and presentation',
       '₹300 per team',
       'Team size should be 1 or 2',
@@ -117,10 +116,12 @@ export const nonTechnicalEvents: Event[] = [
     fee: '₹100 per head',
     icon: 'fa-gamepad',
     details: [
-      'Individual registrations',
+      'Team size:- 4',
       'Bring your own device',
       'Tournament style competition',
-      'Registration fee:- ₹300 per team'
+      'Registration fee:- ₹200 per team',
+      'No Hackers will be allowed',
+      'Registration Deadline:9/4/25'
     ],
     type: 'non-technical',
     color: 'secondary'
@@ -188,11 +189,11 @@ export const nonTechnicalEvents: Event[] = [
     id: 'photography',
     title: 'Photography',
     description: 'Capture the Moments',
-    fee: '₹100/- per head',
+    fee: '₹50/- per head',
     icon: 'fa-music',
     details: [
       'Individual participation',
-      'Registration fee:- 100/- per head ', 
+      'Registration fee:- 50/- per head ', 
     ],
     type: 'non-technical',
     color: 'secondary'
