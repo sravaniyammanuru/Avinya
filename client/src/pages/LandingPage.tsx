@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { useLocation } from 'wouter';
 
@@ -6,11 +5,11 @@ export default function LandingPage() {
   const [, setLocation] = useLocation();
 
   useEffect(() => {
-    const handleClick = () => {
-      setLocation('/home');
-    };
-    document.body.addEventListener('click', handleClick);
-    return () => document.body.removeEventListener('click', handleClick);
+    const timer = setTimeout(() => {
+      setLocation('/home'); // Auto-redirect after 4 seconds
+    }, 4000);
+
+    return () => clearTimeout(timer); // Cleanup the timer
   }, [setLocation]);
 
   return (
