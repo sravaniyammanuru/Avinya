@@ -7,7 +7,7 @@ export default function LandingPage() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLocation('/home'); // Auto-redirect after 4 seconds
-    }, 8000);
+    }, 7000);
 
     return () => clearTimeout(timer); // Cleanup the timer
   }, [setLocation]);
