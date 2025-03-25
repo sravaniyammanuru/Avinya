@@ -26,7 +26,7 @@ export default function Navbar() {
             <a href="#events" className="font-medium hover:text-[var(--primary)] transition duration-300">Events</a>
             <a href="#schedule" className="font-medium hover:text-[var(--primary)] transition duration-300">Schedule</a>
             <a href="#faq" className="font-medium hover:text-[var(--primary)] transition duration-300">FAQ</a>
-            <a href="#register" className="bg-[var(--primary)] hover:bg-[var(--primary-dark)] text-white px-4 py-2 rounded-full font-medium transition duration-300">Register Now</a>
+            <a href="#events" className="bg-[var(--primary)] hover:bg-[var(--primary-dark)] text-white px-4 py-2 rounded-full font-medium transition duration-300">Register Now</a>
           </div>
           
           <div className="md:hidden flex items-center">
