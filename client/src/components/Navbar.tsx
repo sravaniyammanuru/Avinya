@@ -49,7 +49,7 @@ export default function Navbar() {
           <a href="#events" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[var(--primary)] hover:text-white transition duration-300">Events</a>
           <a href="#schedule" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[var(--primary)] hover:text-white transition duration-300">Schedule</a>
           <a href="#faq" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[var(--primary)] hover:text-white transition duration-300">FAQ</a>
-          <a href="#register" className="block px-3 py-2 bg-[var(--primary)] text-white rounded-md text-base font-medium hover:bg-[var(--primary-dark)] transition duration-300">Register Now</a>
+          <a href="#events" className="block px-3 py-2 bg-[var(--primary)] text-white rounded-md text-base font-medium hover:bg-[var(--primary-dark)] transition duration-300">Register Now</a>
         </div>
       </div>
     </nav>
