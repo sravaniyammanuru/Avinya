@@ -32,7 +32,7 @@ export default function Hero() {
               Explore Events
             </a>
             <a 
-              href="#register" 
+              href="#events" 
               className="px-8 py-3 bg-transparent border-2 border-white text-white font-medium rounded-full hover:bg-white/10 transition duration-300 transform hover:scale-105"
             >
               Register Now
